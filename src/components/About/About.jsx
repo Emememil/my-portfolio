@@ -1,5 +1,4 @@
 import React from 'react';
-// The problematic import for "profile-photo.jpg" has been removed.
 import AnimatedTitle from '../common/AnimatedTitle';
 import AnimatedContent from '../common/AnimatedContent';
 import './About.css';
@@ -12,7 +11,8 @@ const About = () => {
         <div className="about-content">
           <div className="about-image-container">
             <img 
-              src="https://placehold.co/600x600/0D0D0F/EDEDED?text=Emil" 
+              // UPDATED: Changed src to the local profile photo
+              src="/profile-photo.jpg" 
               alt="Emil William" 
               className="about-photo" 
             />
