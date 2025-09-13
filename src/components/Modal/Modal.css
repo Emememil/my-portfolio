@@ -108,7 +108,7 @@
 .modal-body::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 4px; }
 .modal-body::-webkit-scrollbar-thumb:hover { background: var(--text-color-secondary); }
 
-/* --- NEW: Mobile Responsiveness --- */
+/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
   .modal-content {
     width: 100vw;
@@ -119,10 +119,16 @@
   }
 
   .modal-header {
-    padding: 20px;
+    padding: 20px 16px;
   }
 
   .modal-body {
-    padding: 20px;
+    padding: 20px 16px;
+  }
+  
+  /* NEW: Improve readability of case study text on mobile */
+  .modal-body p {
+    font-size: 1.05rem; /* Slightly larger text */
+    color: var(--text-color-primary); /* Brighter color for high contrast */
   }
 }
