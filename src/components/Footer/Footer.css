@@ -1,0 +1,103 @@
+/* --- FINAL, PREMIUM FOOTER LAYOUT --- */
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 2rem 60px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer-content {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.footer-cta {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--text-color-secondary) 0%, var(--text-color-primary) 50%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* --- UPDATED & REFINED FOR A MORE PREMIUM FEEL --- */
+.footer-prompt {
+  font-size: 1.2rem; /* Increased size for better presence */
+  color: var(--text-color-secondary);
+  font-weight: 400; /* Kept light for an elegant contrast */
+  letter-spacing: 0.015em; /* Added subtle spacing for a sophisticated, airy feel */
+  max-width: 550px;
+  margin: 0 auto 3rem auto; /* Standardized margin and increased bottom spacing */
+}
+
+.footer-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  color: var(--text-color-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s var(--ease-premium);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.footer-email-link:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px var(--accent-glow);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-socials a {
+  color: var(--text-color-secondary);
+  transition: all 0.3s var(--ease-premium);
+}
+
+.footer-socials a:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.footer-socials svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding-top: 120px;
+  }
+  .footer-prompt {
+    font-size: 1.1rem; /* Adjust slightly for mobile */
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+}

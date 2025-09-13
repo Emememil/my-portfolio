@@ -1,0 +1,70 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--section-padding);
+  background: radial-gradient(ellipse at center, #16181d 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 198, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 198, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+  animation: constellationMove 20s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes constellationMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(10px, -15px) scale(1.05);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-5px, 10px) scale(0.98);
+    opacity: 0.4;
+  }
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 900px;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 2.8rem;
+  line-height: 1.09;
+  letter-spacing: -0.025em;
+  background: linear-gradient(180deg, var(--text-color-primary) 0%, var(--accent-color) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--text-color-primary); /* Fallback for IE */
+}
+
+.hero-tagline {
+  font-size: clamp(1.13rem, 2.5vw, 1.32rem);
+  line-height: 1.82;
+  color: var(--text-color-secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  font-weight: 400;
+}
