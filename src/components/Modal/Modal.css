@@ -119,16 +119,17 @@
   }
 
   .modal-header {
-    padding: 20px 16px;
+    padding: 20px;
   }
 
   .modal-body {
-    padding: 20px 16px;
+    padding: 20px;
   }
   
-  /* NEW: Improve readability of case study text on mobile */
   .modal-body p {
-    font-size: 1.05rem; /* Slightly larger text */
-    color: var(--text-color-primary); /* Brighter color for high contrast */
+    font-size: 1.05rem;
+    line-height: 1.7;
+    /* FINAL FIX: Use the high-contrast primary text color for readability */
+    color: var(--text-color-primary);
   }
 }
