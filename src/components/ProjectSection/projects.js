@@ -15,7 +15,8 @@ export const projects = [
     description: 'A modern movie discovery web application that allows users to browse, search, and discover new films and TV shows with a sleek, user-friendly interface.',
     image: cineraHero,
     caseStudyImage: cineraCaseStudy,
-    tags: ['React', 'API', 'UI/UX'],
+    // UPDATED: Changed tags to reflect a more advanced skillset
+    tags: ['Desktop App Development', 'React', 'Rust'],
   },
   {
     id: 2,
@@ -31,7 +32,6 @@ export const projects = [
     description: 'A progressive web app designed to simplify bill splitting and expense tracking among groups, featuring real-time updates and clear visualizations.',
     image: expensesHero,
     caseStudyImage: expensesCaseStudy,
-    // UPDATED AND ACCURATE TAGS
     tags: ['React', 'State Management', 'UI/UX Design'],
   },
 ];
