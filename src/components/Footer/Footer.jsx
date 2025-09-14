@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+// UPDATED: Added FaLinkedin import
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
 
@@ -26,10 +27,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-socials">
           <a href="https://github.com/Emememil" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+          {/* ADDED: LinkedIn Profile Link */}
           <a href="https://www.linkedin.com/in/emil-william" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         </div>
         <div className="footer-copyright">
-          <p>&copy; {currentYear} Emil William. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Emil William. All Rights Reserved.</p>
         </div>
       </div>
     </motion.footer>
