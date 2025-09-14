@@ -1,7 +1,8 @@
 import React from 'react';
-import AnimatedTitle from '../common/AnimatedTitle';
-import AnimatedContent from '../common/AnimatedContent';
-import './Resume.css'; // Corrected CSS import
+// FIX: Corrected the import paths to be relative to the current directory
+import AnimatedTitle from './common/AnimatedTitle.jsx';
+import AnimatedContent from './common/AnimatedContent.jsx';
+import './Resume.css';
 
 const Resume = () => {
   return (
