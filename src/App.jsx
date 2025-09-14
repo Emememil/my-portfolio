@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 import About from './components/About/About';
 import ProjectSection from './components/ProjectSection/ProjectSection';
+import Resume from './components/Resume/Resume'; // Import the new component
 import Modal from './components/Modal/Modal';
 import Footer from './components/Footer/Footer';
 import './App.css';
@@ -28,9 +29,9 @@ function App() {
       <Skills />
       <About />
       <ProjectSection onOpenModal={openModal} />
+      <Resume /> {/* Add the new component here */}
       <Footer />
       
-      {/* THIS LINE IS NOW RESTORED */}
       {selectedProject && <Modal project={selectedProject} onClose={closeModal} />}
     </div>
   );

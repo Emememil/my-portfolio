@@ -19,6 +19,8 @@ const Navbar = () => {
       <div className="navbar-logo"><a href="#">Emil William</a></div>
       <ul className="navbar-links">
         <li><a href="#projects">Work</a></li>
+        {/* ADDED: Resume Link */}
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#footer">Contact</a></li>
       </ul>
     </nav>
