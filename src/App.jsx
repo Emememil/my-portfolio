@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 import About from './components/About/About';
 import ProjectSection from './components/ProjectSection/ProjectSection';
-// FIX: Added .jsx extension for a more explicit import path
+// FIX: Added .jsx extension for an explicit import path
 import Resume from './components/Resume/Resume.jsx';
 import Modal from './components/Modal/Modal';
 import Footer from './components/Footer/Footer';
@@ -33,7 +33,7 @@ function App() {
       <Resume />
       <Footer />
       
-      {selectedProject && <Modal project={selected-project} onClose={closeModal} />}
+      {selectedProject && <Modal project={selectedProject} onClose={closeModal} />}
     </div>
   );
 }
