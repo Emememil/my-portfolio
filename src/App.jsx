@@ -4,8 +4,8 @@ import Hero from './components/Hero/Hero';
 import Skills from './components/Skills/Skills';
 import About from './components/About/About';
 import ProjectSection from './components/ProjectSection/ProjectSection';
-// FIX: Added .jsx extension for an explicit import path
-import Resume from './components/Resume/Resume.jsx';
+// FIX: Corrected import path to match project structure
+import Resume from './components/Resume.jsx';
 import Modal from './components/Modal/Modal';
 import Footer from './components/Footer/Footer';
 import './App.css';
