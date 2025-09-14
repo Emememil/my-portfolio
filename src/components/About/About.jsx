@@ -1,4 +1,6 @@
 import React from 'react';
+// FIX: Import the image directly from the assets folder
+import profilePhoto from '../../assets/profile-photo.jpg';
 import AnimatedTitle from '../common/AnimatedTitle';
 import AnimatedContent from '../common/AnimatedContent';
 import './About.css';
@@ -11,8 +13,8 @@ const About = () => {
         <div className="about-content">
           <div className="about-image-container">
             <img 
-              // UPDATED: Changed src to the local profile photo
-              src="/profile-photo.jpg" 
+              // FIX: Use the imported image variable as the source
+              src={profilePhoto}
               alt="Emil William" 
               className="about-photo" 
             />

@@ -1,5 +1,4 @@
 import React from 'react';
-import AnimatedTitle from '../common/AnimatedTitle';
 import AnimatedContent from '../common/AnimatedContent';
 import './Hero.css';
 
@@ -7,10 +6,12 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        {/* REVERTED: Using AnimatedTitle again for the sophisticated stagger effect */}
-        <AnimatedTitle text="Front-End Developer" as="h1" className="hero-title" triggerOnLoad={true} />
+        {/* FIX: Using AnimatedContent for the title for a more stable load-in animation */}
+        <AnimatedContent triggerOnLoad={true} delay={0.1}>
+          <h1 className="hero-title">Front-End Developer</h1>
+        </AnimatedContent>
         
-        <AnimatedContent triggerOnLoad={true} delay={0.4}>
+        <AnimatedContent triggerOnLoad={true} delay={0.2}>
           <p className="hero-tagline">
             I design and build beautiful, responsive, and intuitive web experiences. Turning complex problems into elegant solutions is my passion.
           </p>
