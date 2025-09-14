@@ -6,15 +6,14 @@
   --glass-border: rgba(255, 255, 255, 0.08);
 
   /* TYPOGRAPHY COLORS */
-  --text-color-primary: #f5f5f7; /* A slightly softer white than #fff */
+  --text-color-primary: #f5f5f7;
   --text-color-secondary: #a1a1a6;
 
   /* MONOCHROMATIC ACCENT */
   --accent-color: #f5f5f7; 
   --accent-glow: rgba(245, 245, 247, 0.15);
 
-  /* --- UPDATED: Apple-Inspired Typographic System --- */
-  /* 1. Standardized on Inter, the best alternative to Apple's San Francisco font */
+  /* TYPOGRAPHY (Apple-Inspired) */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   /* SPACING & BORDERS */
@@ -36,52 +35,45 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-family); /* Use the new global font */
+  font-family: var(--font-family);
   background: var(--bg-color);
   color: var(--text-color-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  /* 2. Set a base font-size and line-height for body text */
   font-size: 17px;
   line-height: 1.65;
-  font-weight: 400; /* Regular weight for body copy */
+  font-weight: 400;
 }
-
-/* 3. Redefined all heading and paragraph styles for a consistent, Apple-like hierarchy */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family);
   color: var(--text-color-primary);
   margin: 0;
-  /* Use a more refined Semibold (600) instead of Bold (700) */
   font-weight: 600;
-  letter-spacing: -0.02em; /* Apply subtle, tight tracking */
+  letter-spacing: -0.02em;
 }
 
 h1 {
-  /* For the main Hero Title */
   font-size: clamp(3rem, 7vw, 4.5rem);
   line-height: 1.1;
   letter-spacing: -0.025em;
 }
 
 h2 {
-  /* For Section Titles like "Selected Works" */
   font-size: clamp(2rem, 5vw, 2.75rem);
   line-height: 1.2;
 }
 
 h3 {
-  /* For smaller headlines like card titles or the Footer CTA */
   font-size: clamp(1.5rem, 4vw, 2rem);
   line-height: 1.3;
 }
 
 p {
-  color: var(--text-color-secondary); /* Softer color for paragraphs */
+  color: var(--text-color-secondary);
   margin: 0;
-  font-size: 1rem; /* Relative to the body's 17px base */
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -89,4 +81,13 @@ a {
   color: var(--text-color-primary);
   text-decoration: none;
   transition: all 0.3s var(--ease-premium);
+}
+
+/* --- NEW: Global Section Spacing System --- */
+/* This rule ensures every section has the exact same padding for perfect consistency. */
+#skills,
+#about,
+#projects,
+#resume {
+  padding: var(--section-padding);
 }
