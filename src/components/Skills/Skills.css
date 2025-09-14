@@ -1,5 +1,6 @@
-.skills-container { 
-  padding: var(--section-padding); 
+.skills-container {
+  /* The redundant padding rule has been removed from here */
+  /* The global rule in index.css will now take full control */
   max-width: 1200px; 
   margin: 0 auto; 
 }
