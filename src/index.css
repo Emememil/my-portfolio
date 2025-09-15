@@ -239,7 +239,7 @@ footer.section {
   font-size: 21px; font-weight: 500; color: var(--text-color-secondary);
   padding: 0.75rem 1.5rem; border-radius: 12px; background: var(--glass-bg);
   backdrop-filter: blur(20px); border: 1px solid var(--glass-border);
-  transition: all 0.4s var(--ease-premium); display: inline-flex; align-items: center; gap: 0.75rem;
+  transition: all 0.2s var(--ease-premium); display: inline-flex; align-items: center; gap: 0.75rem;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -256,6 +256,8 @@ footer.section {
   color: var(--accent-color); border-color: var(--accent-color);
   transform: translateY(-2px);
   background: var(--glass-highlight);
+  box-shadow: 0 0 20px -5px var(--accent-glow);
+  transition: all 0.1s ease-out;
 }
 .footer-bottom {
   padding-top: 2.5rem; display: flex; justify-content: space-between; align-items: center;
@@ -279,6 +281,18 @@ footer.section {
 .footer-copyright p { 
   color: var(--text-color-secondary); font-size: 14px; 
   letter-spacing: -0.016em; line-height: 1.28571;
+}
+
+/* Mobile-specific enhancements for footer email link */
+@media (hover: none) and (pointer: coarse) {
+  .footer-email-link:active {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    background: var(--glass-highlight);
+    box-shadow: 0 0 25px -3px var(--accent-glow);
+    transform: translateY(-2px);
+    transition: all 0.05s ease-out;
+  }
 }
 
 /* --- RESPONSIVE OVERRIDES --- */
