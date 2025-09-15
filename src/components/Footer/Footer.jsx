@@ -19,7 +19,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/emil-william" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
           <div className="footer-copyright">
-            <p>&copy; {new Date().getFullYear()} Emil William. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Emil. All Rights Reserved.</p>
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar ${scrolled || isMobileMenuOpen ? 'scrolled' : ''}`}>
-        <div className="navbar-logo"><a href="#">Emil William</a></div>
+        <div className="navbar-logo"><a href="#">Emil</a></div>
         <ul className="navbar-links">
           {navLinks.map((link) => (
             <li key={link.title}><a href={link.href}>{link.title}</a></li>
