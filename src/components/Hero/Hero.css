@@ -68,3 +68,20 @@
   margin: 0 auto 3rem auto;
   font-weight: 400;
 }
+
+.hero-greeting {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.022em;
+  line-height: 1.38095;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .hero-greeting {
+    font-size: 19px;
+    margin-bottom: 0.75rem;
+  }
+}
