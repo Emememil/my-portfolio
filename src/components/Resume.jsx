@@ -24,7 +24,7 @@ const Resume = () => {
               <div className="resume-item">
                 <h4 className="item-title">Bachelor of Computer Applications (BCA)</h4>
                 <p className="item-subtitle">AMRITA VISHWA VIDYAPEETHAM</p>
-                <p className="item-duration">2022-2025 (Expected)</p>
+                <p className="item-duration">2022 - 2025</p>
               </div>
             </div>
           </div>
