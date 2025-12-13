@@ -1,5 +1,3 @@
-// src/components/ProjectSection/projects.js
-
 import cineraHero from '../../assets/cinera-hero.png';
 import spotifyHero from '../../assets/spotify-hero.png';
 import expensesHero from '../../assets/expenses-hero.png';
@@ -15,8 +13,9 @@ export const projects = [
     description: 'A modern movie discovery web application that allows users to browse, search, and discover new films and TV shows with a sleek, user-friendly interface.',
     image: cineraHero,
     caseStudyImage: cineraCaseStudy,
-    // UPDATED: Changed tags to reflect a more advanced skillset
     tags: ['Desktop App Development', 'React', 'Rust'],
+    demoLink: 'https://vimeo.com/1118518277',
+    // No repoLink for Cinera
   },
   {
     id: 2,
@@ -25,6 +24,8 @@ export const projects = [
     image: spotifyHero,
     caseStudyImage: spotifyCaseStudy,
     tags: ['Data Viz', 'React', 'API'],
+    demoLink: 'https://spotify-ai-dashboard.vercel.app/',
+    repoLink: 'https://github.com/Emememil/spotify-ai-dashboard',
   },
   {
     id: 3,
@@ -33,5 +34,7 @@ export const projects = [
     image: expensesHero,
     caseStudyImage: expensesCaseStudy,
     tags: ['React', 'State Management', 'UI/UX Design'],
+    demoLink: 'https://expense-splitter-app-emil.vercel.app/',
+    repoLink: 'https://github.com/Emememil/expense-splitter-app',
   },
 ];

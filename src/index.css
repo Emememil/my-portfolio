@@ -44,7 +44,7 @@ p {
 }
 a { 
   color: var(--text-color-primary); text-decoration: none; 
-  transition: all 0.3s var(--ease-premium); font-family: var(--font-family);
+  transition: all 0.5s var(--ease-premium); font-family: var(--font-family);
 }
 
 /* --- GLOBAL LAYOUT SYSTEM --- */
@@ -88,7 +88,7 @@ a {
   gap: 1.3rem; padding: 2.25rem; background: var(--glass-bg);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border); border-radius: 16px;
-  transition: all 0.32s var(--ease-premium); cursor: default;
+  transition: all 0.5s var(--ease-premium); cursor: default;
 }
 .skill-card:hover {
   background: var(--glass-highlight); border-color: var(--accent-color);
@@ -125,7 +125,7 @@ a {
 .project-image-container { position: relative; }
 .project-image-container img {
   width: 100%; border-radius: 12px; position: relative; z-index: 2;
-  transition: transform 0.3s var(--ease-premium);
+  transition: transform 0.5s var(--ease-premium);
 }
 .project-card:hover .project-image-container img { transform: translateY(-10px); }
 .project-info { display: flex; flex-direction: column; gap: 1.5rem; }
@@ -141,7 +141,7 @@ a {
   padding: .5rem 1rem; background: var(--glass-bg);
   border: 1px solid var(--glass-border); border-radius: 20px;
   font-size: 14px; font-weight: 400; letter-spacing: -0.016em;
-  color: var(--text-color-secondary); transition: all 0.3s var(--ease-premium);
+  color: var(--text-color-secondary); transition: all 0.5s var(--ease-premium);
   cursor: default;
 }
 .project-tag:hover {
@@ -149,20 +149,6 @@ a {
   transform: translateY(-2px); box-shadow: 0 0 15px -3px var(--accent-glow);
   color: var(--text-color-primary);
 }
-.case-study-button {
-  display: inline-flex; align-items: center; align-self: flex-start; gap: 0.75rem;
-  margin-top: 1.5rem; padding: 1rem 2rem; background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--glass-border); border-radius: 50px; color: var(--text-color-primary);
-  font-family: var(--font-family); font-size: 17px; font-weight: 500;
-  cursor: pointer; position: relative; overflow: hidden;
-  transition: all 0.4s var(--ease-premium); letter-spacing: -0.022em;
-}
-.case-study-button:hover {
-  background: var(--accent-color); color: var(--bg-color); border-color: var(--accent-color);
-  box-shadow: 0 0 25px -5px var(--accent-glow); transform: translateY(-3px);
-}
-.case-study-button::after { content: '→'; transition: transform 0.3s var(--ease-premium); }
-.case-study-button:hover::after { transform: translateX(4px); }
 
 /* --- RESUME SECTION --- */
 .download-container {
@@ -174,7 +160,7 @@ a {
   display: inline-flex; align-items: center; gap: 0.75rem;
   background: var(--glass-bg); border: 1px solid var(--glass-border);
   padding: 1rem 2rem; border-radius: 12px; color: var(--text-color-primary);
-  font-size: 17px; font-weight: 500; transition: all 0.3s var(--ease-premium);
+  font-size: 17px; font-weight: 500; transition: all 0.5s var(--ease-premium);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   cursor: pointer; letter-spacing: -0.022em;
 }
@@ -268,11 +254,11 @@ footer.section {
   display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px;
   border-radius: 50%; background: var(--glass-bg); backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
-  transition: all 0.4s var(--ease-premium);
+  transition: all 0.5s var(--ease-premium);
 }
 .footer-socials a svg {
   font-size: 1.4rem; color: var(--text-color-secondary);
-  transition: all 0.4s var(--ease-premium);
+  transition: all 0.5s var(--ease-premium);
 }
 .footer-socials a:hover {
   border-color: var(--accent-color); transform: translateY(-3px);
@@ -309,4 +295,112 @@ footer.section {
   .project-card:nth-child(even) .project-image-container { order: initial; }
   .projects-wrapper { gap: 120px; }
   .footer-bottom { flex-direction: column-reverse; gap: 2rem; text-align: center; }
+}
+
+/* ============================================
+   PROJECT CARD ACTIONS - UNIFIED INLINE ROW
+   ============================================ */
+
+/* 1. The Container */
+.project-actions {
+  margin-top: 24px;
+  width: 100%;
+}
+
+/* 2. The Row (Holds Buttons + Text Link) */
+.project-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap; /* Allows wrapping */
+  width: 100%;
+}
+
+/* 3. Base DNA (Inherited) */
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s var(--ease-premium);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+/* 4. Primary (Video Demo / Live Demo) */
+.btn-primary {
+  background: var(--accent-color);
+  color: #000;
+  font-weight: 600;
+  min-width: 160px;
+  /* Fixed Glow (Tight & Sharp) */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.15);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
+}
+
+/* 5. Secondary (View Code) */
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--accent-color);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  min-width: 160px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* 6. Tertiary (Read Case Study - Inline Text Link) */
+.btn-tertiary {
+  background: transparent;
+  color: var(--text-color-secondary);
+  padding: 0 1rem;
+  height: 50px;
+  margin-left: 4px; /* Slight offset */
+}
+.btn-tertiary::after {
+  content: '→';
+  transition: transform 0.5s var(--ease-premium);
+}
+.btn-tertiary:hover {
+  color: var(--text-color-primary);
+  background: transparent;
+}
+.btn-tertiary:hover::after {
+  transform: translateX(4px);
+}
+
+/* 7. Mobile Stack */
+@media (max-width: 768px) {
+  .project-actions-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-primary, .btn-secondary, .btn-tertiary {
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-tertiary {
+    margin-left: 0;
+    margin-top: 4px;
+  }
 }
