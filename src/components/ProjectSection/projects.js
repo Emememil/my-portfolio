@@ -34,7 +34,7 @@ export const projects = [
     image: expensesHero,
     caseStudyImage: expensesCaseStudy,
     tags: ['React', 'State Management', 'UI/UX Design'],
-    demoLink: 'https://expense-splitter-app-emil.vercel.app/',
+    demoLink: 'https://emememil.github.io/expense-splitter-app/',
     repoLink: 'https://github.com/Emememil/expense-splitter-app',
   },
 ];
