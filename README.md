@@ -136,10 +136,10 @@ Follow these steps to get a local copy of the project up and running:
 
    ```bash
 
-   git clone [https://github.com/Emememil/my-portfolio.git](https://github.com/Emememil/my-portfolio.git)
+   git clone https://github.com/Emememil/my-portfolio.git
 
 
-
+   
 2. **Navigate to the directory**
 
    ```bash
@@ -147,7 +147,7 @@ Follow these steps to get a local copy of the project up and running:
    cd my-portfolio
 
 
-
+   
 3. **Install dependencies**
 
    ```Bash
@@ -155,7 +155,7 @@ Follow these steps to get a local copy of the project up and running:
    npm install
 
 
-
+   
 4. **Launch the development server**
 
     ```Bash
