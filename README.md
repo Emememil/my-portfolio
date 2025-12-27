@@ -82,10 +82,10 @@ Install dependencies:
    
 ## Connect with Me
 
-GitHub: @Emememil
+GitHub: [My Github]([emememil.github.io/my-portfolio]
 
-LinkedIn: https://www.linkedin.com/in/emil-william
+LinkedIn : [Emil William](https://www.linkedin.com/in/emil-william)
 
-Portfolio: emememil.github.io/my-portfolio
+Portfolio : [My portfolio](emememil.github.io/my-portfolio)
 
 "Take a complex problem and build a simple, elegant solution".
