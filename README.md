@@ -82,10 +82,10 @@ Install dependencies:
    
 ## Connect with Me
 
-GitHub: [My Github]([emememil.github.io/my-portfolio]
+**GitHub:** [Check out my repositories](https://github.com/Emememil)
 
-LinkedIn : [Emil William](https://www.linkedin.com/in/emil-william)
+**LinkedIn :** [Connect with me on LinkedIn](https://www.linkedin.com/in/emil-william)
 
-Portfolio : [My portfolio](emememil.github.io/my-portfolio)
+**Portfolio :** [Visit my live portfolio website](https://emil-william.vercel.app/)
 
 "Take a complex problem and build a simple, elegant solution".
