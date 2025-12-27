@@ -71,7 +71,7 @@ Follow these steps to get a local copy of the project up and running:
 
 2. **Navigate to the directory**
    ```bash
-   npm install
+   cd my-portfolio
 
 3. **Install dependencies**
    ```Bash
