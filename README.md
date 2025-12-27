@@ -61,33 +61,31 @@ I am a **BCA Graduate (2025)** with a background in creative arts. My transition
 
 ---
 
-## 🚀 Local Development
+## Local Development
 
 Follow these steps to get a local copy of the project up and running:
 
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/Emememil/my-portfolio.git](https://github.com/Emememil/my-portfolio.git)
-Navigate to the directory:
+   Navigate to the directory:
 
-Bash
-
-cd my-portfolio
+2. **cd my-portfolio**
 Install dependencies:
+   ```bash
+   npm install
+   Launch the development server:
 
-Bash
+3. **Install dependencies**
+   ```Bash
+   npm run dev
+   
+## Connect with Me
 
-npm install
-Launch the development server:
-
-Bash
-
-npm run dev
-📫 Connect with Me
 GitHub: @Emememil
 
-LinkedIn: Emil William
+LinkedIn: https://www.linkedin.com/in/emil-william
 
 Portfolio: emememil.github.io/my-portfolio
 
-"Take a complex problem and build a simple, elegant solution.
+"Take a complex problem and build a simple, elegant solution".
