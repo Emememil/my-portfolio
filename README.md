@@ -112,11 +112,11 @@ I am a **BCA Graduate (2025)** with a background in creative arts. My transition
 
 
 
-- **Current Focus:** Mastery of React, TypeScript, and Rust systems.
+- **Current Specialization:** Mastering the intersection of React architecture, TypeScript type-safety, and high-performance Rust systems.
 
-- **Future Goals:** Pursuing a Master's in Germany to specialize in Advanced Software Systems and High-Performance Computing.
+- **Professional Commitment:** Focused on delivering scalable, high-impact software that prioritizes technical excellence and seamless user experiences.
 
-- **Creative Side:** Music composition, singing, and guitar—where logic meets melody.
+- **Creative Side:** Music composition, singing, and guitar—where I continue to explore the balance between creativity and structure.
 
 
 
@@ -161,8 +161,12 @@ Follow these steps to get a local copy of the project up and running:
     ```Bash
 
    npm run dev
-
    
+
+
+---
+
+
 
 ## Connect with Me
 
