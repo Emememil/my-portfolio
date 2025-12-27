@@ -90,8 +90,6 @@ I believe in **AI-augmented development** to achieve production-ready results at
 
 | Project | Tech Highlights | Demo |
 
-| :--- | :--- | :--- |
-
 | **Cinera** | Rust, Tauri, React | [View Demo](https://vimeo.com/1118518277) |
 
 | **Spotify Dashboard** | API Integration, Data Viz | [Live Link](https://spotify-ai-dashboard.vercel.app/) |
