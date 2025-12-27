@@ -1,4 +1,4 @@
-# 🚀 Emil William | Software Engineer & Creative Craftsperson
+# Emil William | Software Engineer & Creative Craftsperson
 
 A high-performance portfolio showcasing the intersection of **Systems Engineering (Rust)** and **Modern Web Architecture (React)**. This project is a testament to my philosophy: *Software is a craft, and the developer is an architect of experiences.*
 
@@ -9,7 +9,7 @@ A high-performance portfolio showcasing the intersection of **Systems Engineerin
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **High-Performance Navigation:** A custom-built mobile-responsive Navbar with active state tracking and smooth anchor link transitions.
 - **Dynamic Project Gallery:** A scalable "Work" section that maps data from a centralized schema, allowing for rapid project updates without modifying core components.
@@ -20,7 +20,7 @@ A high-performance portfolio showcasing the intersection of **Systems Engineerin
 
 ---
 
-## 💡 Engineering Philosophy: Craft & Velocity
+## Engineering Philosophy: Craft & Velocity
 
 I believe in **AI-augmented development** to achieve production-ready results at high velocity without sacrificing technical rigor.
 - **The Craft:** Every component, from modal state transitions to viewport-aware animations, is built for maintainability, type safety, and accessibility.
@@ -28,7 +28,7 @@ I believe in **AI-augmented development** to achieve production-ready results at
 
 ---
 
-## 🛠️ Technical Deep Dive
+## Technical Deep Dive
 
 ### 1. Hybrid Architecture (Web + Systems)
 - **Cinera App:** Explores the high-performance world of **Tauri and Rust**, bringing a sleek React frontend to a native desktop environment.
@@ -41,7 +41,7 @@ I believe in **AI-augmented development** to achieve production-ready results at
 
 ---
 
-## 📂 Project Showcase
+## Project Showcase
 
 | Project | Tech Highlights | Demo |
 | :--- | :--- | :--- |
@@ -51,7 +51,7 @@ I believe in **AI-augmented development** to achieve production-ready results at
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 I am a **BCA Graduate (2025)** with a background in creative arts. My transition from music production to software engineering gives me a unique perspective on "Logical Creativity." 
 
@@ -82,10 +82,10 @@ Install dependencies:
    
 ## Connect with Me
 
-**GitHub:** [Check out my repositories](https://github.com/Emememil)
+**GitHub    :** [Check out my repositories](https://github.com/Emememil)
 
-**LinkedIn :** [Connect with me on LinkedIn](https://www.linkedin.com/in/emil-william)
+**LinkedIn  :** [Connect with me on LinkedIn](https://www.linkedin.com/in/emil-william)
 
 **Portfolio :** [Visit my live portfolio website](https://emil-william.vercel.app/)
 
-"Take a complex problem and build a simple, elegant solution".
+## "Take a complex problem and build a simple, elegant solution"
