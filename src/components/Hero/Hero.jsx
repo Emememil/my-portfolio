@@ -6,20 +6,17 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        {/* NEW: Personal greeting */}
         <AnimatedContent triggerOnLoad={true} delay={0.05}>
           <p className="hero-greeting">Hi, I'm Emil</p>
         </AnimatedContent>
         
-        {/* EXISTING: Main title (delay adjusted) */}
         <AnimatedContent triggerOnLoad={true} delay={0.1}>
-          <h1 className="hero-title">Front-End Developer</h1>
+          <h1 className="hero-title">Full-Stack Developer</h1>
         </AnimatedContent>
         
-        {/* EXISTING: Tagline (delay adjusted) */}
         <AnimatedContent triggerOnLoad={true} delay={0.2}>
           <p className="hero-tagline">
-            I design and build beautiful, responsive, and intuitive web experiences. Turning complex problems into elegant solutions is my passion.
+            Specializing in high-fidelity interfaces and robust system architecture. I design and build production-ready applications that merge complex logic with elegant user experiences.
           </p>
         </AnimatedContent>
       </div>

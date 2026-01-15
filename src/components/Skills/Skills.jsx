@@ -1,21 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaFigma } from 'react-icons/fa';
-import { SiJavascript, SiVite, SiTailwindcss, SiFramer } from 'react-icons/si';
+import { FaReact, FaGitAlt, FaFigma, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript, SiVite, SiTailwindcss, SiFramer, SiTypescript, SiMongodb, SiExpress, SiNextdotjs } from 'react-icons/si';
 import AnimatedTitle from '../common/AnimatedTitle.jsx';
 
 const skills = [
-  { name: 'HTML5', icon: <FaHtml5 /> }, { name: 'CSS3', icon: <FaCss3Alt /> },
-  { name: 'JavaScript (ES6+)', icon: <SiJavascript /> }, { name: 'React', icon: <FaReact /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss /> }, { name: 'Framer Motion', icon: <SiFramer /> },
-  { name: 'Vite', icon: <SiVite /> }, { name: 'Figma', icon: <FaFigma /> }, { name: 'Git', icon: <FaGitAlt /> },
+  { name: 'TypeScript', icon: <SiTypescript /> },
+  { name: 'React / Next.js', icon: <SiNextdotjs /> },
+  { name: 'Node.js', icon: <FaNodeJs /> },
+  { name: 'Express.js', icon: <SiExpress /> },
+  { name: 'MongoDB', icon: <SiMongodb /> },
+  { name: 'Framer Motion', icon: <SiFramer /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+  { name: 'Figma', icon: <FaFigma /> },
+  { name: 'Git', icon: <FaGitAlt /> },
 ];
 
 const Skills = () => {
   return (
     <section id="skills" className="section">
       <div className="container">
-        <AnimatedTitle as="h2" text="My Tech Stack" className="section-title" />
+        <AnimatedTitle as="h2" text="Technical Stack" className="section-title" />
         <motion.div
           className="skills-grid"
           initial="hidden"

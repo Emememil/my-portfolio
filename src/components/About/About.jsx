@@ -11,10 +11,13 @@ const About = () => {
           <div className="about-content">
             <div className="about-text-container">
               <p>
-                I'm a developer who believes that great software is a craft. For me, it's not just about writing code; it's about shaping an experience. I build with modern, performant tools like React and TypeScript because they allow me to create applications that are not only robust but also intuitive and genuinely helpful to the user. From feature-rich web apps like my Expense Splitter Pro to exploring the high-performance world of desktop apps with Tauri and Rust, my work is a reflection of my commitment to quality and user-centric design. My goal is always the same: to take a complex problem and build a simple, elegant solution.
+                I am a <strong>Full-Stack Developer</strong> who views software as a craft, specializing in the intersection of <strong>architectural logic</strong> and <strong>pixel-perfect design</strong>.
               </p>
               <p>
-                When I'm not coding, you can find me expressing my creativity through music, whether it's singing, playing guitar, or composing. I believe the best solutions are a perfect blend of creativity and logic, and I am always looking for the next challenge to build something amazing.
+                My approach is defined by a commitment to <strong>1:1 design-to-code fidelity</strong> and robust systems. These are principles I’ve refined while shipping mission-critical features in high-intensity studio environments. Whether architecting secure backend systems or engineering high-fidelity motion, I focus on merging <strong>complex logic</strong> with <strong>elegant user experiences</strong>.
+              </p>
+              <p>
+                When I’m not coding, I express my creativity through <strong>music</strong>, singing, playing guitar, and composing. I believe the most impactful solutions are born at the perfect blend of <strong>creativity and logic</strong>, and I am always looking for the next challenge to build something exceptional.
               </p>
             </div>
           </div>

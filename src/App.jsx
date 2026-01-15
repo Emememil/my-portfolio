@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
+import Experience from './components/Experience/Experience';
+import ProjectSection from './components/ProjectSection/ProjectSection';
 import Skills from './components/Skills/Skills';
 import About from './components/About/About';
-import ProjectSection from './components/ProjectSection/ProjectSection';
-// FIX: Corrected import path to match project structure
 import Resume from './components/Resume.jsx';
 import Modal from './components/Modal/Modal';
 import Footer from './components/Footer/Footer';
@@ -27,9 +27,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Experience />
+      <ProjectSection onOpenModal={openModal} />
       <Skills />
       <About />
-      <ProjectSection onOpenModal={openModal} />
       <Resume />
       <Footer />
       
