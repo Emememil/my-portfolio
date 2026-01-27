@@ -11,12 +11,12 @@ const Hero = () => {
         </AnimatedContent>
         
         <AnimatedContent triggerOnLoad={true} delay={0.1}>
-          <h1 className="hero-title">Full-Stack Developer</h1>
+          <h1 className="hero-title">Frontend Engineer • UI/UX Specialist</h1>
         </AnimatedContent>
         
         <AnimatedContent triggerOnLoad={true} delay={0.2}>
           <p className="hero-tagline">
-            Specializing in high-fidelity interfaces and robust system architecture. I design and build production-ready applications that merge complex logic with elegant user experiences.
+            I am a Product Engineer specializing in 1:1 design-to-code parity. I bridge the gap between mission-critical architectural logic and premium, high-fidelity user interfaces.
           </p>
         </AnimatedContent>
       </div>
