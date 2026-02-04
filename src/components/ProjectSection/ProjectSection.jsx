@@ -1,16 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { projects } from './projects';
+import { getProjects } from './projects';
 import ProjectCard from './ProjectCard';
 import AnimatedTitle from '../common/AnimatedTitle.jsx';
-// REMOVED: No longer need to import the local CSS file.
-// import './ProjectSection.css';
 
-const ProjectSection = ({ onOpenModal }) => {
+const ProjectSection = ({ onOpenModal, mode = 'default' }) => {
+  const projects = getProjects(mode);
+  const isSolutions = mode === 'solutions';
+
   return (
     <section id="projects" className="section">
       <div className="container">
-        <AnimatedTitle as="h2" text="Selected Works" className="section-title" />
+        <AnimatedTitle 
+          as="h2" 
+          text={isSolutions ? "Technical Implementation Proofs" : "Selected Works"} 
+          className="section-title" 
+        />
         <div className="projects-wrapper">
           {projects.map((project, index) => (
             <motion.div

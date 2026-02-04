@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Experience from './components/Experience/Experience';
@@ -9,6 +10,21 @@ import Resume from './components/Resume.jsx';
 import Modal from './components/Modal/Modal';
 import Footer from './components/Footer/Footer';
 import './App.css';
+
+function MainLayout({ mode, onOpenModal }) {
+  return (
+    <>
+      <Navbar mode={mode} />
+      <Hero mode={mode} />
+      <Experience mode={mode} />
+      <ProjectSection mode={mode} onOpenModal={onOpenModal} />
+      <Skills mode={mode} />
+      <About mode={mode} />
+      <Resume />
+      <Footer />
+    </>
+  );
+}
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -24,18 +40,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Experience />
-      <ProjectSection onOpenModal={openModal} />
-      <Skills />
-      <About />
-      <Resume />
-      <Footer />
-      
-      {selectedProject && <Modal project={selectedProject} onClose={closeModal} />}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MainLayout mode="default" onOpenModal={openModal} />} />
+          <Route path="/solutions" element={<MainLayout mode="solutions" onOpenModal={openModal} />} />
+        </Routes>
+        
+        {selectedProject && <Modal project={selectedProject} onClose={closeModal} />}
+      </div>
+    </Router>
   );
 }
 

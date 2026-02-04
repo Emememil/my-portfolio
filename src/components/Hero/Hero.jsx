@@ -2,7 +2,9 @@ import React from 'react';
 import AnimatedContent from '../common/AnimatedContent';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ mode = 'default' }) => {
+  const isSolutions = mode === 'solutions';
+
   return (
     <section className="hero-section">
       <div className="hero-content">
@@ -11,12 +13,19 @@ const Hero = () => {
         </AnimatedContent>
         
         <AnimatedContent triggerOnLoad={true} delay={0.1}>
-          <h1 className="hero-title">Frontend Engineer • UI/UX Specialist</h1>
+          <h1 className="hero-title">
+            {isSolutions 
+              ? 'Technical Solutions Engineer • Implementation Specialist' 
+              : 'Frontend Engineer • UI/UX Specialist'}
+          </h1>
         </AnimatedContent>
         
         <AnimatedContent triggerOnLoad={true} delay={0.2}>
           <p className="hero-tagline">
-            I am a Product Engineer specializing in 1:1 design-to-code parity. I bridge the gap between mission-critical architectural logic and premium, high-fidelity user interfaces.
+            {isSolutions 
+              ? 'Technical Solutions Specialist focused on system reliability. I bridge the gap between complex architectural logic and scalable software by ensuring transactional accuracy and multi-tenant security across the stack.'
+              : 'I am a Product Engineer specializing in 1:1 design-to-code parity. I bridge the gap between mission-critical architectural logic and premium, high-fidelity user interfaces.'
+            }
           </p>
         </AnimatedContent>
       </div>

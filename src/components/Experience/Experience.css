@@ -93,3 +93,286 @@
   .experience-card { padding: 1.5rem; }
   .experience-header { flex-direction: column; }
 }
+
+/* ============================================
+   SYSTEM AUDIT TERMINAL - Apple Engineering DNA
+   ============================================ */
+
+.system-audit-terminal {
+  margin-top: 24px;
+  background: rgba(10, 10, 12, 0.4);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.system-audit-terminal:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.terminal-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-indicator {
+  width: 6px;
+  height: 6px;
+  background: #34d399;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.6);
+  animation: pulse-status 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-status {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.6);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 12px rgba(52, 211, 153, 0.8);
+  }
+}
+
+.status-label {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.terminal-timestamp {
+  font-family: 'SF Mono', 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.terminal-body {
+  padding: 20px 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.code-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: 'SF Mono', 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+.code-line {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.code-indent {
+  padding-left: 24px;
+}
+
+/* Syntax Highlighting */
+.code-comment { color: rgba(116, 142, 115, 0.9); font-style: italic; }
+.code-keyword { color: #fc6a8a; }
+.code-function { color: #67cdff; }
+.code-variable { color: #b4d2ff; }
+.code-operator { color: #fc6a8a; }
+.code-bracket { color: rgba(255, 255, 255, 0.65); }
+.code-built-in { color: #6fc1ff; }
+.code-method { color: #dabaff; }
+.code-number { color: #d0bf69; }
+
+@media (max-width: 768px) {
+  .code-block { font-size: 12px; }
+  .code-indent { padding-left: 20px; }
+}
+
+/* REFINED: Luxury Steel Blue Palette */
+.terminal-status .status-label {
+  color: rgba(255, 255, 255, 0.5); /* Muted for premium feel */
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.status-indicator {
+  background: #70a1ff; /* Desaturated Ice Blue */
+  box-shadow: 0 0 10px rgba(112, 161, 255, 0.3);
+}
+
+@keyframes pulse-status {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.5; }
+}
+
+.code-function { color: #82aaff; } /* Muted blue for functions */
+.code-keyword { color: #c792ea; }  /* Soft lavender instead of hot pink */
+.code-comment { color: rgba(103, 110, 149, 0.6); } /* Subtler comments */
+
+/* ============================================
+   REFINED: Luxury Steel & Ice Blue Overrides
+   ============================================ */
+
+/* Mute the header label for a more "integrated" feel */
+.status-label {
+  color: rgba(255, 255, 255, 0.45) !important; 
+  font-weight: 500 !important;
+  letter-spacing: 0.08em !important;
+}
+
+/* Shift indicator to a desaturated "Ice Blue" */
+.status-indicator {
+  background: #7ca5f5 !important; 
+  box-shadow: 0 0 10px rgba(124, 165, 245, 0.25) !important;
+}
+
+/* Sophisticated Syntax Highlighting Shift */
+.code-function { color: #82aaff !important; } /* Muted Steel Blue */
+.code-keyword { color: #c792ea !important; }  /* Soft Lavender */
+.code-operator { color: #89ddff !important; } /* Muted Cyan */
+.code-comment { color: rgba(103, 110, 149, 0.5) !important; } /* Subtler comments */
+
+/* Adjust the left border to match the new Steel tone */
+.system-audit-terminal {
+  border-left: 2px solid rgba(124, 165, 245, 0.4) !important;
+}
+
+/* ============================================
+   SYSTEM AUDIT TERMINAL - Apple Engineering DNA
+   Surgical Refinement: Zero Inline Styles Edition
+   ============================================ */
+
+.system-audit-terminal {
+  margin-top: 24px !important;
+  background: rgba(10, 10, 12, 0.4) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  border: 0.5px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  position: relative !important;
+}
+
+.system-audit-terminal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 0.5px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.system-audit-terminal:hover {
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 
+    0 12px 48px rgba(0, 0, 0, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+  transform: translateY(-1px);
+}
+
+.terminal-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 14px 18px !important;
+  background: rgba(255, 255, 255, 0.018) !important;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.status-indicator {
+  width: 6px !important;
+  height: 6px !important;
+  background: #7ca5f5 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 6px rgba(124, 165, 245, 0.4) !important;
+  animation: pulse-status 3s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+
+.status-label {
+  font-family: -apple-system, system-ui, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.terminal-timestamp {
+  font-family: 'SF Mono', 'JetBrains Mono', monospace !important;
+  font-size: 10px !important;
+  color: rgba(255, 255, 255, 0.38) !important;
+}
+
+.terminal-body {
+  padding: 22px 18px !important;
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+.code-block {
+  font-family: 'SF Mono', 'JetBrains Mono', monospace !important;
+  font-size: 13px !important;
+  line-height: 1.7 !important;
+}
+
+/* Carbon Syntax Colors */
+.code-comment { color: rgba(103, 110, 149, 0.65) !important; font-style: italic !important; }
+.code-keyword, .code-equals, .code-arrow { color: #c792ea !important; }
+.code-function, .code-method, .code-built-in { color: #82aaff !important; }
+.code-number { color: #ecc48d !important; }
+.code-variable { color: rgba(255, 255, 255, 0.85) !important; }
+
+/* REFINED: Subliminal Status Pulse */
+.status-indicator {
+  background: rgba(124, 165, 245, 0.6) !important; /* Muted base color */
+  box-shadow: 0 0 4px rgba(124, 165, 245, 0.1) !important; /* Barely-there glow */
+}
+
+@keyframes pulse-status {
+  0%, 100% {
+    opacity: 0.8;
+    box-shadow: 0 0 4px rgba(124, 165, 245, 0.15);
+  }
+  50% {
+    opacity: 0.4;
+    box-shadow: 0 0 8px rgba(124, 165, 245, 0.25);
+  }
+}
