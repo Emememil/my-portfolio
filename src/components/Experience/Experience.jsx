@@ -6,44 +6,34 @@ import './Experience.css';
 const Experience = ({ mode = 'default' }) => {
   const isSolutions = mode === 'solutions';
 
-  return (
-    <section id="experience" className="section">
-      <div className="container">
-        <AnimatedTitle 
-          as="h2" 
-          text={isSolutions ? "Technical Implementation & Systems Logic" : "Selected Professional Projects"} 
-          className="section-title" 
-        />
-        
-        <AnimatedContent>
-          <div className="experience-card">
-            <div className="experience-header">
-              <div>
-                <h3 className="role-title">
-                  {isSolutions ? "Technical Solutions Specialist (Residency)" : "Technical Residency (Full-Stack)"}
-                </h3>
-                <p className="company-name">DODOX STUDIO</p>
+  // --- GHOST VERSION (/solutions) ---
+  if (isSolutions) {
+    return (
+      <section id="experience" className="section">
+        <div className="container">
+          <AnimatedTitle 
+            as="h2" 
+            text="Technical Implementation & Systems Logic" 
+            className="section-title" 
+          />
+          <AnimatedContent>
+            <div className="experience-card">
+              <div className="experience-header">
+                <div>
+                  <h3 className="role-title">Technical Solutions Specialist (Residency)</h3>
+                  <p className="company-name">DODOX STUDIO</p>
+                </div>
+                <div className="experience-date">WINTER 2026</div>
               </div>
-              <div className="experience-date">WINTER 2026</div>
-            </div>
 
-            <div className="project-engagement">
-              <span className="project-name">Livora | System Reliability Refactor</span>
-              <ul className="experience-list">
-                <li>
-                  {isSolutions 
-                    ? "Eliminated financial discrepancies by migrating core pricing to Paise-based integer math, ensuring 100% data integrity for audit-readiness."
-                    : "Refactored backend pricing architecture to separate Subtotal and GST calculations using Paise-based integer math."}
-                </li>
-                <li>
-                  {isSolutions
-                    ? "Engineered secure RBAC middleware to manage multi-tenant kitchen/admin permissions, hardening mission-critical API routes."
-                    : "Re-engineered Role-Based Access Control (RBAC) middleware for Admin and Kitchen flows."}
-                </li>
-              </ul>
-            </div>
-            
-            {isSolutions && (
+              <div className="project-engagement">
+                <span className="project-name">Livora | System Reliability Refactor</span>
+                <ul className="experience-list">
+                  <li>Eliminated financial discrepancies by migrating core pricing to Paise-based integer math, ensuring 100% data integrity for audit-readiness.</li>
+                  <li>Engineered secure RBAC middleware to manage multi-tenant kitchen/admin permissions, hardening mission-critical API routes.</li>
+                </ul>
+              </div>
+              
               <div className="system-audit-terminal">
                 <div className="terminal-header">
                   <div className="terminal-status">
@@ -52,7 +42,6 @@ const Experience = ({ mode = 'default' }) => {
                   </div>
                   <div className="terminal-timestamp">IEEE 754 Mitigation</div>
                 </div>
-                
                 <div className="terminal-body">
                   <div className="code-block">
                     <span className="code-comment">// Preventing Float Rounding Errors (IEEE 754)</span>
@@ -66,7 +55,51 @@ const Experience = ({ mode = 'default' }) => {
                   </div>
                 </div>
               </div>
-            )}
+            </div>
+          </AnimatedContent>
+        </div>
+      </section>
+    );
+  }
+
+  // --- ORIGINAL VERSION (Default / Home) ---
+  return (
+    <section id="experience" className="section">
+      <div className="container">
+        <AnimatedTitle as="h2" text="Selected Professional Projects" className="section-title" />
+        <AnimatedContent>
+          <div className="experience-card">
+            <div className="experience-header">
+              <div>
+                <h3 className="role-title">Technical Residency (Full-Stack)</h3>
+                <p className="company-name">DODOX STUDIO</p>
+              </div>
+              <div className="experience-date">WINTER 2026</div>
+            </div>
+
+            <div className="project-engagement">
+              <span className="project-name">Livora | E-commerce Infrastructure</span>
+              <ul className="experience-list">
+                <li>
+                  Refactored backend pricing architecture to separate <strong>Subtotal and GST calculations</strong>, implementing <strong>Paise-based integer math</strong> to ensure 100% historical financial accuracy.
+                </li>
+                <li>
+                  Re-engineered <strong>Role-Based Access Control (RBAC)</strong> middleware for Admin and Kitchen flows, hardening API security while maintaining frontend compatibility.
+                </li>
+              </ul>
+            </div>
+
+            <div className="project-engagement">
+              <span className="project-name">Studio Mirae | Interaction Engineering</span>
+              <ul className="experience-list">
+                <li>
+                  Developed a high-performance Hero Reveal utilizing <strong>Anchor-Lock Architecture</strong> and GPU-accelerated spring transitions to achieve sub-pixel precision.
+                </li>
+                <li>
+                  Achieved <strong>1:1 parity</strong> with Figma easing curves via Framer Motion parameters for high-fidelity component transitions across multiple modules.
+                </li>
+              </ul>
+            </div>
           </div>
         </AnimatedContent>
       </div>
