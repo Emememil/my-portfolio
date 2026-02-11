@@ -9,18 +9,20 @@ import About from './components/About/About';
 import Resume from './components/Resume.jsx';
 import Modal from './components/Modal/Modal';
 import Footer from './components/Footer/Footer';
+import MetaManager from './components/MetaManager/MetaManager';
 import './App.css';
 
 function MainLayout({ mode, onOpenModal }) {
   return (
     <>
+      <MetaManager mode={mode} />
       <Navbar mode={mode} />
       <Hero mode={mode} />
       <Experience mode={mode} />
       <ProjectSection mode={mode} onOpenModal={onOpenModal} />
       <Skills mode={mode} />
       <About mode={mode} />
-      <Resume />
+      <Resume mode={mode} />
       <Footer />
     </>
   );
