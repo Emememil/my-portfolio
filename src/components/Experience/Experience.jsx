@@ -46,7 +46,7 @@ const Experience = ({ mode = 'default' }) => {
                   <div className="code-block">
                     <span className="code-comment">// Preventing Float Rounding Errors (IEEE 754)</span>
                     <span className="code-line">
-                      <span className="code-keyword">const</span> <span className="code-function">calculateTotal</span> = (price, tax) => &#123;<br/>
+                      <span className="code-keyword">const</span> <span className="code-function">calculateTotal</span> = (price, tax) =&gt; &#123;<br/>
                       &nbsp;&nbsp;<span className="code-comment">// Convert to integer (Paise) to ensure precision</span><br/>
                       &nbsp;&nbsp;<span className="code-keyword">const</span> <span className="code-variable">priceInPaise</span> = Math.round(price * 100);<br/>
                       &nbsp;&nbsp;<span className="code-keyword">return</span> (priceInPaise + (priceInPaise * tax)) / 100;<br/>
